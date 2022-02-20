@@ -24,3 +24,13 @@ func SumMultiples(N int) int {
 	}
 	return sum
 }
+
+func SumMultiplesOptimized(N int) int {
+	var sum int
+	for i := 1; i < N; i++ {
+		if i%3 == 0 || i%5 == 0 {
+			sum += i
+		}
+	}
+	return sum
+}
